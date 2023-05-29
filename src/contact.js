@@ -1,4 +1,4 @@
-function createContactPage() {
+const createContactPage = () => {
   const pageContent = document.createElement("div");
   pageContent.id = "contact-page";
 
@@ -46,7 +46,7 @@ function createContactPage() {
   return pageContent;
 }
 
-function createInfo(key, value) {
+const createInfo = (key, value) => {
   const infoContainer = document.createElement("div");
 
   const infoKey = document.createElement("span");
@@ -61,7 +61,7 @@ function createInfo(key, value) {
   return infoContainer;
 }
 
-function setActiveButton(id) {
+const setActiveButton = (id) => {
   const activeButton = document.querySelector(".active");
   if (activeButton) activeButton.classList.remove("active");
 
@@ -69,7 +69,7 @@ function setActiveButton(id) {
   contactButton.classList.add("active");
 }
 
-function loadContactPage() {
+const loadContactPage = () => {
   const content = document.getElementById("content");
   content.textContent = "";
 

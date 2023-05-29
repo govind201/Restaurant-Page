@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+nav {
+  padding: 0 15px;
+  background-color: #fcfbf9;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 5px 2rem;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.tab.active {
+  border-bottom: 2px solid black;
+}
+
+#home-page-des {
+  margin: 0;
+  color: white;
+  background-image: url("./images/menu_page.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 2.6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-page-des h2 {
+  text-align: center;
+  width: 50%;
+  font-family: "Lobster", cursive;
+  font-size: 4em;
+}
+#home-page-des h4,
+#home-page-des p {
+  text-align: center;
+  width: 50%;
+}
+#home-page-des h4 {
+  font-family: "Kalam", cursive;
+  font-size: 2em;
+}
+
+#products {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, calc(90% / 3));
+  margin: 20px;
+  padding-left: 70px;
+}
+
+.item-img {
+  width: 200px;
+  height: 200px;
+}
+
+#contact-page {
+  width: 70%;
+}
+
+#contact-page h4 {
+  margin: 5px 0;
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+}

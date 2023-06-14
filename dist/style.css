@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+
 nav {
   padding: 0 15px;
   background-color: #fcfbf9;
@@ -45,11 +46,13 @@ nav {
   font-family: "Lobster", cursive;
   font-size: 4em;
 }
+
 #home-page-des h4,
 #home-page-des p {
   text-align: center;
   width: 50%;
 }
+
 #home-page-des h4 {
   font-family: "Kalam", cursive;
   font-size: 2em;

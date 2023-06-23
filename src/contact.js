@@ -1,3 +1,5 @@
+import { setBtnActive } from "./init-page";
+
 const createContactPage = () => {
   const pageContent = document.createElement("div");
   pageContent.id = "contact-page";
@@ -61,19 +63,12 @@ const createInfo = (key, value) => {
   return infoContainer;
 }
 
-const setActiveButton = (id) => {
-  const activeButton = document.querySelector(".active");
-  if (activeButton) activeButton.classList.remove("active");
-
-  const contactButton = document.getElementById(id);
-  contactButton.classList.add("active");
-}
 
 const loadContactPage = () => {
   const content = document.getElementById("content");
   content.textContent = "";
 
-  setActiveButton("contact");
+  setBtnActive("contact");
   content.appendChild(createContactPage());
 }
 

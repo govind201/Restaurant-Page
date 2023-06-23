@@ -1,3 +1,5 @@
+import { setBtnActive } from "./init-page";
+
 const createHomepage = () => {
   const homePage = document.createElement("div");
   homePage.id = "home-page-des";
@@ -15,14 +17,6 @@ const createHomepage = () => {
   homePage.appendChild(para);
 
   return homePage;
-};
-
-const setBtnActive = (id) => {
-  const btnActive = document.querySelector(".active");
-  if (btnActive) btnActive.classList.remove("active");
-
-  const homeBtn = document.getElementById(id);
-  homeBtn.classList.add("active");
 };
 
 const loadHomepage = () => {

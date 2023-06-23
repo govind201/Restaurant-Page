@@ -28,6 +28,15 @@ const createNav = () => {
   return nav;
 };
 
+export const setBtnActive = (id) => {
+  const btnActive = document.querySelector(".active");
+  if (btnActive) btnActive.classList.remove("active");
+
+  const homeBtn = document.getElementById(id);
+  homeBtn.classList.add("active");
+};
+
+
 const createContent = () => {
   const content = document.createElement("div");
   content.id = "content";

@@ -1,3 +1,5 @@
+import { setBtnActive } from "./init-page";
+
 const createMenu = (img, name, price) => {
   const item = document.createElement("div");
   item.classList.add = "items";
@@ -17,14 +19,7 @@ const createMenu = (img, name, price) => {
   item.appendChild(itemName);
   item.appendChild(itemPrice);
   return item;
-}
-const setBtnActive = (id) => {
-  const btnActive = document.querySelector(".active");
-  if (btnActive) btnActive.classList.remove("active");
-
-  const menuBtn = document.getElementById(id);
-  menuBtn.classList.add("active");
-}
+};
 
 const loadMenu = () => {
   const content = document.getElementById("content");
@@ -36,44 +31,44 @@ const loadMenu = () => {
 
   const items = [
     createMenu(
-    "https://source.unsplash.com/featured/?food/1",
-      "Water",
-      "$6.48",
+      "https://source.unsplash.com/featured/?food/1",
+      "Product 1",
+      "$6.48"
     ),
     createMenu(
-    "https://source.unsplash.com/featured/?food/2",
-      "Choclate Milk",
-      "$6.48",
+      "https://source.unsplash.com/featured/?food/2",
+      "Product 2",
+      "$6.48"
     ),
     createMenu(
-        "https://source.unsplash.com/featured/?food/3",
-      "Fanta",
-      "$7.98",
+      "https://source.unsplash.com/featured/?food/3",
+      "Product 3",
+      "$7.98"
     ),
     createMenu(
-    "https://source.unsplash.com/featured/?food/4",
-      "Pepsi",
-      "$8.98",
+      "https://source.unsplash.com/featured/?food/4",
+      "Product 4",
+      "$8.98"
     ),
     createMenu(
-    "https://source.unsplash.com/featured/?food/5",
-      "Coke",
-      "$9.98",
+      "https://source.unsplash.com/featured/?food/5",
+      "Product 5",
+      "$9.98"
     ),
     createMenu(
-    "https://source.unsplash.com/featured/?food/6",
-      "Tea",
-      "$17.99",
+      "https://source.unsplash.com/featured/?food/6",
+      "Product 6",
+      "$17.99"
     ),
     createMenu(
-    "https://source.unsplash.com/featured/?food/7",
-      "Coffee",
-      "$8.98",
+      "https://source.unsplash.com/featured/?food/7",
+      "Product 7",
+      "$8.98"
     ),
     createMenu(
-    "https://source.unsplash.com/featured/?food/8",
-      "Lemonade",
-      "$6.99",
+      "https://source.unsplash.com/featured/?food/8",
+      "Product 8",
+      "$6.99"
     ),
   ];
 
@@ -81,6 +76,6 @@ const loadMenu = () => {
     conatiner.appendChild(item);
   });
   content.appendChild(conatiner);
-}
+};
 
 export default loadMenu;
